@@ -14,14 +14,14 @@ public class App {
     		.build(),
     	Empleado.builder()
     		.genero(Genero.HOMBRE)
-    		.departamento(Departamento.CONTABILIDAD)
+    		.departamento(Departamento.CONTABILIDAD)   		
     		.nombre("Carlos")
     		.primerApellido("Garcia")
     		.salario(3100.50)
     		.build(),
     	Empleado.builder()
     		.genero(Genero.MUJER)
-    		.departamento(Departamento.RRHH)
+    		.departamento(Departamento.RRHH)    		
     		.nombre("Cristina")
     		.primerApellido("Martinez")
     		.salario(1400)
