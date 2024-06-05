@@ -6,6 +6,8 @@ public class App {
    
       
       // Ejercicio 6a
+    
+    	
       Object[] empleadosYEstudiantes = {
     		  Empleado.builder()
     		  	.departamento(Departamento.RRHH)
