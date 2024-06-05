@@ -15,6 +15,7 @@ import lombok.experimental.SuperBuilder;
 @EqualsAndHashCode(callSuper = true)
 @SuperBuilder
 
+// Ejercicio 3c
 public class Empleado extends Persona {
 
 	private Departamento departamento;

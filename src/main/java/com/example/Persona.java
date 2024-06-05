@@ -11,6 +11,7 @@ import lombok.experimental.SuperBuilder;
 @Data
 @SuperBuilder
 
+// Ejercicio 3b
 public class Persona {
 
 	private String nombre;

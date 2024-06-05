@@ -3,7 +3,8 @@ package com.example;
 public class App {
 
     public static void main( String[] args ) { 
-    
+    // Ejercicio 4a
+    	
     Empleado[] arrayEmpleados = {
     		
     	Empleado.builder()
@@ -82,5 +83,40 @@ public class App {
       Departamento sumatoriaDeDepartamentos;
       
       System.out.println("El salario promedio agrupado por departamento es :");
+      
+      // Ejercicio 4b
+      
+      double salarioPromedioRRHH = 0.0;
+      double salarioPromedioCONTABILIDAD = 0.0;
+      double salarioPromedioINFORMATICA = 0.0;
+    
+      double sumatoriaSalariosRRHH = 0.0;
+      double sumatoriaSalariosCONTABILIDAD = 0.0;
+      double sumatoriaSalariosINFORMATICA = 0.0;
+      
+      int totalRRHH = 0;
+      int totalCONTABILIDAD = 0;
+      int totalINFORMATICA = 0;
+      
+      
+      for(Empleado empleado : arrayEmpleados) {
+      	if(empleado.getDepartamento().equals(Departamento.RRHH)) {
+      		sumatoriaSalariosRRHH += empleado.getSalario();
+      		totalRRHH++;
+      	} else if(empleado.getDepartamento().equals(Departamento.CONTABILIDAD)) {
+      		sumatoriaSalariosCONTABILIDAD += empleado.getSalario();
+      		totalCONTABILIDAD++;
+      	} else {
+      		sumatoriaSalariosINFORMATICA += empleado.getSalario();
+      		totalINFORMATICA++;
+      		
+            System.out.println("El salario promedio por departamento RRHH es :");
+            System.out.println("El salario promedio por departamento CONTABILIDAD es :");
+      	    System.out.println("El salario promedio por departamento INFORMATICA es :");
+      		}
+      	
+      }
+    	  
+      
     			}
 }	

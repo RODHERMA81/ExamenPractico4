@@ -14,6 +14,7 @@ import lombok.experimental.SuperBuilder;
 @EqualsAndHashCode
 @SuperBuilder
 
+// Ejercicio 5a
 public class Estudiante extends Persona {
 
 	private Facultad facultad;
