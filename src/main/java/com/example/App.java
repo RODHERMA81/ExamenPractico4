@@ -9,6 +9,7 @@ public class App {
     
     	
       Object[] empleadosYEstudiantes = {
+    		  
     		  Empleado.builder()
     		  	.departamento(Departamento.RRHH)
     		  	.salario(1400)
@@ -26,8 +27,13 @@ public class App {
     		  	.totalAsignaturasMatriculadas(1)
     		  	.build()
       };
-  
+      // Ejercicio 7a (1a parte)
+      
+      for(Object object : empleadosYEstudiantes) {
+    	   
+      System.out.println("Recorriendo el array de empleados y estudiantes");
       }
     	
+}
 }
     
